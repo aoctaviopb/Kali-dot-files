@@ -5,6 +5,16 @@ echo "Installing i3-wm and others..."
 echo "********************************************************"
 sudo apt install i3 rofi alacritty polybar
 
+echo "********************************************************"
+echo "Setting number lines in VIM"
+echo "********************************************************"
+echo ":set number" > ~/.vimrc
+
+echo "********************************************************"
+echo "Clonning SecLists"
+echo "********************************************************"
+git clone https://github.com/danielmiessler/SecLists.git ~/Documents/SecLists
+tar -xf ~/SecLists/Passwords/Leaked-Databases/rockyou.txt.tar.gz ~/Documents/rockyou.txt
 
 echo "********************************************************"
 echo "Deleting original conf files"
