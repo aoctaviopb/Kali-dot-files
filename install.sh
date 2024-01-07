@@ -17,8 +17,8 @@ echo "********************************************************"
 echo "Creating symbolic links"
 echo "********************************************************"
 ln -s ~/dot_Files/i3_config ~/.config/i3/config
-ln -s ~/dot_Files/polybar_fores_conf ~/.config/polybar/forest/config.ini
-ln -s ~/dot_Files/polybar_fores_modules ~/.config/polybar/forest/modules.ini
+ln -s ~/dot_Files/polybar_forest_conf ~/.config/polybar/forest/config.ini
+ln -s ~/dot_Files/polybar_forest_modules ~/.config/polybar/forest/modules.ini
 
 #edited files:
 #./config/polybar/forest/modules.ini
