@@ -1,6 +1,11 @@
 #!/bin/bash
 
 echo "********************************************************"
+echo "Updating, Upgrading & Autoremove"
+echo "********************************************************"
+sudo apt update && sudo apt upgrade && sudo apt autoremove
+
+echo "********************************************************"
 echo "Installing i3-wm and others..."
 echo "********************************************************"
 sudo apt install i3 rofi alacritty polybar
