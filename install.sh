@@ -11,6 +11,14 @@ echo "********************************************************"
 sudo apt install i3 rofi alacritty polybar
 
 echo "********************************************************"
+echo "Installing Polybar themes"
+echo "********************************************************"
+git clone --depth=1 https://github.com/adi1090x/polybar-themes.git ~/Documents/polybar-themes
+cd ~/Documents/polybar-themes
+chmod +x setup.sh
+./setup.sh
+
+echo "********************************************************"
 echo "Setting number lines in VIM"
 echo "********************************************************"
 echo ":set number" > ~/.vimrc
@@ -19,21 +27,22 @@ echo "********************************************************"
 echo "Clonning SecLists"
 echo "********************************************************"
 git clone https://github.com/danielmiessler/SecLists.git ~/Documents/SecLists
-tar -xf ~/SecLists/Passwords/Leaked-Databases/rockyou.txt.tar.gz ~/Documents/rockyou.txt
+tar -xf ~/Documents/SecLists/Passwords/Leaked-Databases/rockyou.txt.tar.gz -C ~/Documents/
 
 echo "********************************************************"
-echo "Deleting original conf files"
+echo "Deleting original conf files if exist"
 echo "********************************************************"
-rm ~/.config/i3/config
+rm -rf ~/.config/i3
 rm ~/.config/polybar/forest/config.ini
 rm ~/.config/polybar/forest/modules.ini
 
 echo "********************************************************"
 echo "Creating symbolic links"
 echo "********************************************************"
-ln -s ~/dot_Files/i3_config ~/.config/i3/config
-ln -s ~/dot_Files/polybar_forest_conf ~/.config/polybar/forest/config.ini
-ln -s ~/dot_Files/polybar_forest_modules ~/.config/polybar/forest/modules.ini
+mkdir ~/.config/i3
+ln -s ~/Kali-dot-files/i3_config ~/.config/i3/config
+ln -s ~/Kali-dot-files/polybar_forest_conf ~/.config/polybar/forest/config.ini
+ln -s ~/Kali-dot-files/polybar_forest_modules ~/.config/polybar/forest/modules.ini
 
 #edited files:
 #./config/polybar/forest/modules.ini
