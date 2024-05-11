@@ -8,7 +8,7 @@ sudo apt update && sudo apt upgrade && sudo apt autoremove
 echo "********************************************************"
 echo "Installing i3-wm and others..."
 echo "********************************************************"
-sudo apt install i3 rofi alacritty polybar
+sudo apt install i3 rofi polybar
 
 echo "********************************************************"
 echo "Installing Polybar themes"
@@ -53,3 +53,4 @@ ln -s ~/Kali-dot-files/polybar_forest_modules ~/.config/polybar/forest/modules.i
 #lines 143, 145
 
 #./config/i3/config
+#line 52
