@@ -233,3 +233,7 @@ client.urgent           $bg     $bg     $fg  $bg       $bg
 client.placeholder      $bg     $bg     $fg  $bg       $bg
 
 client.background       $bg
+
+# Deactivate sleep
+exec xset s off        # Disable screen saver blanking
+exec xset -dpms        # Turn off DPMS
