@@ -172,7 +172,7 @@ locale =
 ;   center
 ;   right
 ;   none
-tray-position = none
+tray-position = center
 
 ; If true, the bar will not shift its
 ; contents when the tray changes
@@ -188,7 +188,7 @@ tray-maxsize = 16
 tray-background = ${color.background}
 
 ; Tray offset defined as pixel value (e.g. 35) or percentage (e.g. 50%)
-tray-offset-x = 0
+tray-offset-x = 10%
 tray-offset-y = 0
 
 ; Pad the sides of each tray icon
