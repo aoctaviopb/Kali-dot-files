@@ -23,11 +23,11 @@ echo "Setting number lines in VIM"
 echo "********************************************************"
 echo ":set number" > ~/.vimrc
 
-echo "********************************************************"
-echo "Clonning SecLists"
-echo "********************************************************"
-git clone https://github.com/danielmiessler/SecLists.git ~/Documents/SecLists
-tar -xf ~/Documents/SecLists/Passwords/Leaked-Databases/rockyou.txt.tar.gz -C ~/Documents/
+#echo "********************************************************"
+#echo "Clonning SecLists"
+#echo "********************************************************"
+#git clone https://github.com/danielmiessler/SecLists.git ~/Documents/SecLists
+#tar -xf ~/Documents/SecLists/Passwords/Leaked-Databases/rockyou.txt.tar.gz -C ~/Documents/
 
 echo "********************************************************"
 echo "Deleting original conf files if exist"
