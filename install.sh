@@ -3,7 +3,7 @@
 echo "********************************************************"
 echo "Updating, Upgrading & Autoremove"
 echo "********************************************************"
-sudo apt update && sudo apt upgrade && sudo apt autoremove
+sudo apt update && sudo apt upgrade -y && sudo apt autoremove
 
 echo "********************************************************"
 echo "Installing i3-wm and others..."
